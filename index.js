@@ -8,9 +8,9 @@ app.get('/manufacturers', getAllManufacturers)
 
 app.get('/manufacturers/:id', getManufacturerById)
 
-app.get('/products', getAllProducts)
+/* app.get('/products', getAllProducts)
 
-app.get('/products/:id', getProductById)
+app.get('/products/:id', getProductById) */
 
 app.listen(1346, () => {
   console.log('Listening on port 1346...') // eslint-disable-line no-console
