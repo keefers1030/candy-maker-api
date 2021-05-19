@@ -9,8 +9,8 @@ const connection = new Sequelize('candies', 'candies', 'C4nd13$!', {
 const Products = ProductsModel(connection, Sequelize)
 const Manufacturers = ManufacturersModel(connection, Sequelize)
 
-Manufacturers.hasMany(Products)
 Products.belongsTo(Manufacturers)
+Manufacturers.hasMany(Products)
 
 module.exports = {
   Products,

@@ -22,7 +22,7 @@ const getManufacturerById = async (request, response) => {
     })
 
     return manufacturer ? response.send(manufacturer) : response.sendStatus(404)
-  } catch {
+  } catch (error) {
     return response.status(500).send('Unable to retrieve manufacturer')
   }
 }
